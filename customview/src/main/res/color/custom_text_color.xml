@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中状态下的文本颜色 -->
+    <item android:color="@color/card_title_color_selected" android:state_focused="true"/>
+    <!-- 默认状态下的文本颜色 -->
+    <item android:color="@color/card_title_color_default"/>
+</selector>

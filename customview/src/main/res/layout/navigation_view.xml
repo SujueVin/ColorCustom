@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_margin="@dimen/x10"
+        android:gravity="center"
+        android:background="@drawable/button_transparent_bg"
+        android:textColor="@color/custom_text_color"
+        android:textSize="@dimen/f9" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/f10"
+        android:layout_marginBottom="@dimen/f10"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10"
+        android:gravity="center"
+        android:background="@drawable/button_transparent_bg"
+        android:textColor="@color/custom_text_color"
+        android:textSize="@dimen/f9" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/f10"
+        android:layout_marginBottom="@dimen/f10"
+        android:visibility="gone"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/card_title_color_default"
+        android:textSize="@dimen/f9" />
+</LinearLayout>
