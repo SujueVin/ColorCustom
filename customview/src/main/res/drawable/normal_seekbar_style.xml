@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/background" android:height="@dimen/progress_height" android:gravity="center" android:width="@dimen/progress_width"
-        android:drawable="@drawable/normal_seekbar_background"/>
-
-    <item android:id="@android:id/progress" android:height="@dimen/progress_height" android:gravity="center" android:width="@dimen/progress_width">
-        <clip android:drawable="@drawable/normal_seekbar_progress"/>
-    </item>
-</layer-list>

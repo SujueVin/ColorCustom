@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.color.custom.view'
+    namespace 'com.threepeples.util'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.color.custom.view"
+        applicationId "com.threepeples.util"
         minSdk 28
         targetSdk 33
         versionCode 1

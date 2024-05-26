@@ -1,16 +1,18 @@
 plugins {
     id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.android.customview'
-    compileSdk 31
+    namespace 'com.threepeples.imageutils'
+    compileSdk 33
 
     defaultConfig {
-        minSdk 31
-        targetSdk 31
+        minSdk 28
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -23,14 +25,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    viewBinding {
-        enabled = true
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 
     publishing {
         singleVariant("release")
     }
 }
+
 
 afterEvaluate {
     def versionName = "1.0.0"
@@ -48,6 +51,7 @@ afterEvaluate {
 
 dependencies {
 
+    implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
     testImplementation 'junit:junit:4.13.2'
